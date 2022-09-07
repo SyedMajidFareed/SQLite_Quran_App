@@ -35,9 +35,9 @@ public class RecitationActivity extends AppCompatActivity {
             String text = "You Clicked on Position " + i;
             pos=i;
             Toast.makeText(getApplicationContext(),text,Toast.LENGTH_LONG).show();
-            //Intent intent = new Intent(RecitationActivity.this, MainActivity2.class);
-            //intent.putExtra("positionIndex",String.valueOf(pos));
-            //startActivity(intent);
+            Intent intent = new Intent(RecitationActivity.this, ArabicActivity.class);
+            intent.putExtra("positionIndex",String.valueOf(pos));
+            startActivity(intent);
 
         });
     }

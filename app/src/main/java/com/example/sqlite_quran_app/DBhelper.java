@@ -17,23 +17,22 @@ public class DBhelper extends SQLiteAssetHelper {
     public DBhelper(Context context) {
         super(context,DBNAME,null,DBVERSION);
     }
-    //function to get data(recitation) from databases
-    public ArrayList<SurahModel> gettingSurah()
+    //function to get data(recitation) from database
+    public String[] gettingArabic()
     {
         SQLiteDatabase db = this.getReadableDatabase();
 
-        Cursor cursorCourses = db.rawQuery("SELECT SurahID, SurahNameE FROM tayah" , null);
+        Cursor cursorCourses = db.rawQuery("SELECT Arabic_Text FROM tayah" , null);
 
-
-        ArrayList<SurahModel> data = new ArrayList<>();
+        int i = 0;
+        String[] data = new String[6348];
         if (cursorCourses.moveToFirst()) {
 
             do {
-                data.add(new SurahModel(
-                        cursorCourses.getString(0),
-                        cursorCourses.getInt(1)
-                ));
-
+                data[i] = (
+                        cursorCourses.getString(0)
+                );
+        i++;
             } while (cursorCourses.moveToNext());
         }
         cursorCourses.close();

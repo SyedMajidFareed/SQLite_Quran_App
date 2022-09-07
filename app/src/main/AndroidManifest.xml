@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.sqlite_quran_app">
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SQLite_Quran_App"
         tools:targetApi="31">
+        <activity
+            android:name=".ArabicActivity"
+            android:exported="false" />
         <activity
             android:name=".RecitationActivity"
             android:exported="false" />
