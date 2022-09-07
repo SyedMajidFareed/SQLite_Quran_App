@@ -3,10 +3,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:title="Recitation">
-        <item android:title="Recite Quran" />
+        <item
+            android:id="@+id/recite"
+            android:title="Recite Quran" />
     </group>
     <group android:title="Translations">
-        <item android:title="Urdu Translation" />
-        <item android:title="English Translation" />
+        <item
+            android:id="@+id/urdu"
+            android:title="Urdu Translation" />
+        <item
+            android:id="@+id/english"
+            android:title="English Translation" />
     </group>
 </menu>
