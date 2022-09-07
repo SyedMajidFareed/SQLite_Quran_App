@@ -59,9 +59,9 @@ public class MainActivity extends AppCompatActivity {
                 {
                     case R.id.recite:
                         Toast.makeText(getApplicationContext(),"Return is Clicked",Toast.LENGTH_LONG).show();
-                        //Intent intent = new Intent(MainActivity.this, BookActivity.class);
-                        //startActivity(intent);
-                        //drawerLayout.closeDrawer(GravityCompat.START);
+                        Intent intent = new Intent(MainActivity.this, RecitationActivity.class);
+                        startActivity(intent);
+                        drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
                     case R.id.urdu:

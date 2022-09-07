@@ -17,7 +17,7 @@ public class DBhelper extends SQLiteAssetHelper {
     public DBhelper(Context context) {
         super(context,DBNAME,null,DBVERSION);
     }
-    //function to get data(recitation) from database
+    //function to get data(recitation) from databases
     public ArrayList<SurahModel> gettingSurah()
     {
         SQLiteDatabase db = this.getReadableDatabase();
