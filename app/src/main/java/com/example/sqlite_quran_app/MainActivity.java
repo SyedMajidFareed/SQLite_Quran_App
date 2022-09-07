@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.urdu:
-                        Toast.makeText(getApplicationContext(),"Retur is Clicked",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(),"Return is Clicked",Toast.LENGTH_LONG).show();
                         //drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
