@@ -58,15 +58,17 @@ public class MainActivity extends AppCompatActivity {
                 switch (menuItem.getItemId())
                 {
                     case R.id.recite:
-                        Toast.makeText(getApplicationContext(),"Return is Clicked",Toast.LENGTH_LONG).show();
+                        //Toast.makeText(getApplicationContext(),"Return is Clicked",Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(MainActivity.this, RecitationActivity.class);
                         startActivity(intent);
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
                     case R.id.urdu:
-                        Toast.makeText(getApplicationContext(),"Return is Clicked",Toast.LENGTH_LONG).show();
-                        //drawerLayout.closeDrawer(GravityCompat.START);
+                        //Toast.makeText(getApplicationContext(),"Return is Clicked",Toast.LENGTH_LONG).show();
+                        Intent intent2 = new Intent(MainActivity.this, UrduActivity.class);
+                        startActivity(intent2);
+                        drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 
                     case R.id.english:

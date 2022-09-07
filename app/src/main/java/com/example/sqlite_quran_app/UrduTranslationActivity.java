@@ -9,8 +9,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class ArabicActivity extends AppCompatActivity {
-
+public class UrduTranslationActivity extends AppCompatActivity {
     String pos;
     int convtdpos;
     int sspPos;
@@ -20,12 +19,12 @@ public class ArabicActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_arabic);
+        setContentView(R.layout.activity_urdu_translation);
         helper = new DBhelper(this);
         Intent intent1 = getIntent();
         pos = intent1.getStringExtra("positionIndex");
         convtdpos = Integer.valueOf(pos);
-        String[] QuranArabicText = helper.gettingArabic();
+        String[] UrduText = helper.gettingUrduFMJ();
         ArrayList<String> data2 = new ArrayList<>();
         GivenData data1= new GivenData();
 
@@ -34,13 +33,11 @@ public class ArabicActivity extends AppCompatActivity {
         int i = 0;
         for(i=sspPos-1;i<endssp;i++)
         {
-            data2.add(QuranArabicText[i]);
+            data2.add(UrduText[i]);
         }
         i=0;
-        listView1 = findViewById(R.id.list2);
+        listView1 = findViewById(R.id.listurdutrans);
         ArrayAdapter<String> arrayAdapter1 = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, data2);
         listView1.setAdapter(arrayAdapter1);
     }
-
-
 }

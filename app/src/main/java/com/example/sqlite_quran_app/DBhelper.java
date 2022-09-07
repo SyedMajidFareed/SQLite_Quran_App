@@ -38,4 +38,24 @@ public class DBhelper extends SQLiteAssetHelper {
         cursorCourses.close();
         return data;
     }
+    public String[] gettingUrduFMJ()
+    {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursorCourses = db.rawQuery("SELECT Fateh_Muhammad_Jalandhari FROM tayah" , null);
+
+        int i = 0;
+        String[] data = new String[6348];
+        if (cursorCourses.moveToFirst()) {
+
+            do {
+                data[i] = (
+                        cursorCourses.getString(0)
+                );
+                i++;
+            } while (cursorCourses.moveToNext());
+        }
+        cursorCourses.close();
+        return data;
+    }
 }
