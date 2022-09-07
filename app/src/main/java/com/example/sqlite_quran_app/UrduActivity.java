@@ -18,7 +18,7 @@ public class UrduActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_urdu);
-        listView = findViewById(R.id.listurdu);
+        //listView = findViewById(R.id.listurdu);
         helper = new DBhelper(this);
         ArrayList<String> data= new ArrayList<>();
         GivenData givenData = new GivenData();

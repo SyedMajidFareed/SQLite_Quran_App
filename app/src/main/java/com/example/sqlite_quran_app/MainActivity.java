@@ -72,7 +72,8 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.english:
-                        Toast.makeText(getApplicationContext(),"Laptop is clicked",Toast.LENGTH_LONG).show();
+                        Intent intent3 = new Intent(MainActivity.this, EnglishActivity.class);
+                        startActivity(intent3);
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
 

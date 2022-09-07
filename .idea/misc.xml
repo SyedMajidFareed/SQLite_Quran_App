@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android_Assignments/SQLite_Quran_App/app/src/main/res/layout/activity_arabic.xml" value="0.25" />
+        <entry key="..\:/Android_Assignments/SQLite_Quran_App/app/src/main/res/layout/activity_english.xml" value="0.25" />
+        <entry key="..\:/Android_Assignments/SQLite_Quran_App/app/src/main/res/layout/activity_english_translation.xml" value="0.25" />
         <entry key="..\:/Android_Assignments/SQLite_Quran_App/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Android_Assignments/SQLite_Quran_App/app/src/main/res/layout/activity_recitation.xml" value="0.25" />
         <entry key="..\:/Android_Assignments/SQLite_Quran_App/app/src/main/res/layout/activity_urdu.xml" value="0.10989583333333333" />
