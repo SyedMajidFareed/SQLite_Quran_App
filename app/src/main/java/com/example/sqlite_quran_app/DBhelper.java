@@ -22,7 +22,7 @@ public class DBhelper extends SQLiteAssetHelper {
     {
         SQLiteDatabase db = this.getReadableDatabase();
 
-        Cursor cursorCourses = db.rawQuery("SELECT SurahID, SurahNameE FROM tsurah" , null);
+        Cursor cursorCourses = db.rawQuery("SELECT SurahID, SurahNameE FROM tayah" , null);
 
 
         ArrayList<SurahModel> data = new ArrayList<>();

@@ -1,8 +1,8 @@
 package com.example.sqlite_quran_app;
 
 public class SurahModel {
-    String surahNameE;
     int surahID;
+    String surahNameE;
 
     public SurahModel(String surahNameE, int surahID) {
         this.surahID = surahID;
